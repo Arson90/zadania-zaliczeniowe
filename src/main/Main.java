@@ -1,5 +1,6 @@
 package main;
 
+import set.Set;
 import shop.Client;
 import shop.Phone;
 import shop.Shop;
@@ -69,5 +70,20 @@ public class Main {
         if (phone3 != null) {
             client2.buyPhone(phone3);
         }
+
+    //SET
+
+        Set set = new Set();
+
+        set.add("Tomek");
+        set.add("Natalia");
+        set.add("Roman");
+        set.add("Tomek");
+        set.add("Anna");
+        set.add("Natalia");
+        set.add("Anna");
+
+        set.remove("Anna");
+        System.out.println(set.toString());
     }
 }
